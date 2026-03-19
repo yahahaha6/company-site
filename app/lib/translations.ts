@@ -10,7 +10,7 @@ export const translations = {
       services: "Our Services",
       results: "Admission Results",
       contact: "Contact Us",
-      languageButton: "Switch to Chinese",
+      languageButton: "切换到中文",
     },
 
     home: {
@@ -197,7 +197,7 @@ export const translations = {
       services: "我们的服务",
       results: "录取成果",
       contact: "联系我们",
-      languageButton: "切换到英文",
+      languageButton: "Switch to English",
     },
 
     home: {
