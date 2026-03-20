@@ -8,11 +8,11 @@ export default function ContactPage() {
   return (
     <main className="relative min-h-screen overflow-hidden text-gray-900">
       <div
-        className="absolute inset-0 z-0 bg-cover bg-no-repeat"
+        className="fixed inset-0 z-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: "url('/contact.JPG')",
           backgroundPosition: "center center",
-          filter: "blur(3px)",
+          filter: "blur(5px)",
           transform: "scale(1.05)",
           opacity: 0.9,
         }}

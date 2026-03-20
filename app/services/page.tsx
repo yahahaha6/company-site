@@ -17,7 +17,7 @@ export default function ServicesPage() {
           opacity: 0.9,
         }}
       />
-      <div className="absolute inset-0 z-0 bg-white/20" />
+      <div className="fixed inset-0 z-0 bg-white/20" />
 
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
         <h1 className="text-5xl font-bold">{t.services.title}</h1>
