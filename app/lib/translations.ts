@@ -123,7 +123,7 @@ export const translations = {
         "Summer Campus Visit Program",
         "High School Transition Support, GPA Management & Academic Paper Coaching",
         "Elite STEM Laboratory Summer Internship Program",
-        "Visiting Scholar Application Program",
+        "International Student Support & Supervision for Private High Schools",
       ],
     },
 
@@ -202,7 +202,7 @@ export const translations = {
 
     home: {
       badge: "美国高端教育咨询服务",
-      title: "自私立高中至研究生阶段，提供兼具前瞻性与个性化的升学规划指导，并辅以专业专家团队全程支持",
+      title: "致力申请美本服务，及私立高中和研究生，提供兼具前瞻性与个性化的升学规划指导，并辅以专业专家团队全程支持",
       description:
         "New England Academy Express（新英格兰教育快线）是一家总部位于美国东北部新英格兰地区的高端教育咨询机构，专注于为家庭提供美国顶尖私立高中、本科及研究生项目的全流程、个性化升学规划与申请指导服务。",
       primaryButton: "我们的服务",
@@ -309,7 +309,7 @@ export const translations = {
         "暑期校园访问项目",
         "高中阶段过渡支持、GPA 管理及学术论文辅导",
         "顶尖 STEM 实验室暑期科研实习项目",
-        "访问学者申请项目",
+        "私立高中国际学生监管服务",
       ],
     },
 
