@@ -14,7 +14,7 @@ export default function HomePage() {
         style={{
           backgroundImage: "url('/homebg.jpg')",
           backgroundPosition: "center 78%",
-          filter: "blur(4px)",
+          filter: "blur(3px)",
           transform: "scale(1.06)",
           opacity: 0.9,
         }}

@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <main className="relative min-h-screen overflow-hidden text-gray-900">
       <div
-        className="fixed inset-0 z-0 bg-cover bg-no-repeat"
+        className="pointer-events-none fixed inset-0 z-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: "url('/aboutus.JPG')",
           backgroundPosition: "center center",
@@ -17,7 +17,7 @@ export default function AboutPage() {
           opacity: 0.9,
         }}
       />
-      <div className="absolute inset-0 z-0 bg-white/20" />
+      <div className="pointer-events-none fixed inset-0 z-0 bg-white/20" />
 
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
         <h1 className="text-5xl font-bold">{t.about.title}</h1>
