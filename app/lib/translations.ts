@@ -16,7 +16,7 @@ export const translations = {
     home: {
       badge: "Premier Education Consulting in the U.S.",
       title:
-        "Personalized guidance for private high school, college, and graduate admissions",
+        " Strategic, personalized college admissions guidance—with expert support from private high school through graduate school",
       description:
         "New England Academy Express is a premier education consulting firm based in the New England region of the northeastern United States. We provide comprehensive and personalized support for families seeking admission to U.S. private high schools, colleges, and graduate programs.",
       primaryButton: "Our Services",
