@@ -12,7 +12,7 @@ export default function HomePage() {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/home-bg.jpg')",
+          backgroundImage: "url('/homebg.jpg')",
           backgroundPosition: "center 78%",
           filter: "blur(4px)",
           transform: "scale(1.06)",
