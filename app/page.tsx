@@ -1,27 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useLanguage } from "./context/LanguageContext";
 
 export default function HomePage() {
   const { t } = useLanguage();
 
   return (
-    <main className="relative min-h-screen text-gray-900">
-      <div className="pointer-events-none absolute inset-0 -z-10">
-  <Image
-    src="/home-bg.jpg"
-    alt="Home background"
-    fill
-    priority
-    className="object-cover object-[center_75%] blur-sm scale-105 opacity-80"
-  />
-  <div className="absolute inset-0 bg-white/20" />
-</div>
+    <main className="relative min-h-screen overflow-hidden text-gray-900">
+      {/* 背景图层 */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/home-bg.jpg')",
+          backgroundPosition: "center 78%",
+          filter: "blur(4px)",
+          transform: "scale(1.06)",
+          opacity: 0.9,
+        }}
+      />
 
-      <section className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <div className="mx-auto mb-6 inline-block rounded-full bg-white/70 px-6 py-2 text-lg text-gray-700 backdrop-blur-sm">
+      {/* 白色轻遮罩 */}
+      <div className="absolute inset-0 z-0 bg-white/15" />
+
+      {/* 正文 */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 py-20 text-center">
+        <div className="mx-auto mb-6 inline-block rounded-full bg-white/75 px-6 py-2 text-lg text-gray-700 backdrop-blur-sm">
           {t.home.badge}
         </div>
 
@@ -43,7 +47,7 @@ export default function HomePage() {
 
           <Link
             href="/about"
-            className="rounded-2xl border border-gray-300 bg-white/70 px-8 py-4 text-xl font-semibold text-gray-900 backdrop-blur-sm"
+            className="rounded-2xl border border-gray-300 bg-white/75 px-8 py-4 text-xl font-semibold text-gray-900 backdrop-blur-sm"
           >
             {t.home.secondaryButton}
           </Link>
