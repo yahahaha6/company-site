@@ -10,15 +10,15 @@ export default function HomePage() {
   return (
     <main className="relative min-h-screen text-gray-900">
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <Image
-          src="/home-bg.jpg"
-          alt="Home background"
-          fill
-          priority
-          className="object-cover blur-md scale-110"
-        />
-        <div className="absolute inset-0 bg-white/60" />
-      </div>
+  <Image
+    src="/home-bg.jpg"
+    alt="Home background"
+    fill
+    priority
+    className="object-cover object-[center_75%] blur-sm scale-105 opacity-80"
+  />
+  <div className="absolute inset-0 bg-white/20" />
+</div>
 
       <section className="mx-auto max-w-6xl px-6 py-20 text-center">
         <div className="mx-auto mb-6 inline-block rounded-full bg-white/70 px-6 py-2 text-lg text-gray-700 backdrop-blur-sm">
