@@ -9,13 +9,13 @@ export default function RouteBackground() {
   let backgroundPosition = "center 78%";
 
   if (pathname === "/about") {
-    backgroundImage = "/aboutus.jpg";
+    backgroundImage = "/aboutus.JPG";
     backgroundPosition = "center 78%";
   } else if (pathname === "/services") {
-    backgroundImage = "/service.jpg";
+    backgroundImage = "/service.JPG";
     backgroundPosition = "center 70%";
   } else if (pathname === "/contact") {
-    backgroundImage = "/contact.jpg";
+    backgroundImage = "/contact.JPG";
     backgroundPosition = "center 70%";
   }
 
