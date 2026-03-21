@@ -34,11 +34,17 @@ export default function SiteHeader() {
         </div>
       </div>
 
-      <nav className="border-b border-green-200 bg-green-100">
+      <nav className="sticky top-0 z-50 border-b border-green-200 bg-green-100">
         <div className="mx-auto flex max-w-6xl items-center justify-center px-6 py-4">
-          <div className="flex gap-10 text-xl font-semibold">
+          <div className="flex gap-12 text-xl font-semibold">
             <Link href="/" className="text-gray-900 hover:text-green-700">
               {t.nav.home}
+            </Link>
+
+             
+
+            <Link href="/about" className="text-gray-900 hover:text-green-700">
+              {t.nav.about}
             </Link>
 
             <Link
@@ -46,10 +52,6 @@ export default function SiteHeader() {
               className="text-gray-900 hover:text-green-700"
             >
               {t.nav.companyprofile}
-            </Link>
-
-            <Link href="/about" className="text-gray-900 hover:text-green-700">
-              {t.nav.about}
             </Link>
 
             <Link
