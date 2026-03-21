@@ -42,10 +42,10 @@ export default function SiteHeader() {
             </Link>
 
             <Link
-              href="/profile"
+              href="/companyprofile"
               className="text-gray-900 hover:text-green-700"
             >
-              {t.nav.profile}
+              {t.nav.companyprofile}
             </Link>
 
             <Link href="/about" className="text-gray-900 hover:text-green-700">
