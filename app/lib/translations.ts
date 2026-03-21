@@ -1,4 +1,78 @@
-export const translations = {
+type ServiceItem = {
+  title: string;
+  description: string;
+};
+
+type TranslationContent = {
+  brand: {
+    name: string;
+  };
+  nav: {
+    home: string;
+    about: string;
+    services: string;
+    results: string;
+    contact: string;
+    languageButton: string;
+  };
+  home: {
+    badge: string;
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
+  };
+  profile: {
+    title: string;
+    paragraphs: string[];
+  };
+  about: {
+    title: string;
+    leadershipTitle: string;
+    consultantTitle: string;
+    mentorTitle: string;
+    leadership: {
+      name: string;
+      role: string;
+      bio: string;
+    }[];
+    consultants: {
+      name: string;
+      bio: string;
+    }[];
+    mentorDescription: string;
+    mentorFields: string[];
+  };
+  services: {
+    title: string;
+    items: ServiceItem[];
+  };
+  results: {
+    title: string;
+    undergradTitle: string;
+    undergradLead: string;
+    undergradList: string[];
+    undergradMore: string;
+    highSchoolTitle: string;
+    highSchoolLead: string;
+    highSchoolList: string[];
+    highSchoolMore: string;
+  };
+  contact: {
+    title: string;
+    contactsLabel: string;
+    contacts: string;
+    phoneLabel: string;
+    phone: string;
+    emailLabel: string;
+    email: string;
+  };
+  footer: {
+    copyright: string;
+  };
+};
+
+export const translations: Record<"en" | "zh", TranslationContent> = {
   en: {
     brand: {
       name: "New England Academy Express",
@@ -116,16 +190,40 @@ export const translations = {
     },
 
     services: {
-      title: "Our Services",
-      items: [
-        "U.S. Private High School, Undergraduate & Graduate Admissions Planning",
-        "Summer School Applications",
-        "Summer Campus Visit Program",
-        "High School Transition Support, GPA Management & Academic Paper Coaching",
-        "Elite STEM Laboratory Summer Internship Program",
-        "International Student Support & Supervision for Private High Schools",
-      ],
+  title: "Our Services",
+  items: [
+    {
+      title: "U.S. Private High School, Undergraduate & Graduate Admissions Planning",
+      description:
+        "We provide personalized admissions planning for students applying to U.S. private high schools, undergraduate programs, and graduate schools. This service includes academic positioning, school list building, application timeline design, essay strategy, interview preparation, and overall admissions guidance tailored to each student’s goals.",
     },
+    {
+      title: "Summer School Applications",
+      description:
+        "We help students identify and apply to summer school programs that match their academic interests, skill level, and long-term admissions strategy. Our support includes program selection, application review, essay refinement, and planning how summer experiences can strengthen a student’s profile.",
+    },
+    {
+      title: "Summer Campus Visit Program",
+      description:
+        "We support families in planning meaningful campus visits so students can better understand school culture, academic resources, and campus life. This service helps students prepare questions, organize visit schedules, and reflect on their experiences in a way that informs future school decisions.",
+    },
+    {
+      title: "High School Transition Support, GPA Management & Academic Paper Coaching",
+      description:
+        "We help students adapt to the academic expectations of middle school, high school, or college-preparatory environments. This includes course planning, GPA strategy, study habit support, and coaching for research papers and academic writing to build stronger long-term academic performance.",
+    },
+    {
+      title: "Elite STEM Laboratory Summer Internship Program",
+      description:
+        "We connect students with high-quality STEM-focused summer opportunities, including research and laboratory exposure where appropriate. The goal is to help students deepen subject knowledge, gain hands-on experience, and strengthen future applications in science, engineering, and related fields.",
+    },
+    {
+      title: "International Student Support & Supervision for Private High Schools",
+      description:
+        "We provide ongoing support for international students enrolled in U.S. private high schools. This includes communication with families, adjustment support, academic follow-up, and practical guidance to help students transition smoothly into school life and maintain steady progress.",
+    },
+  ],
+},
 
     results: {
       title: "Admission Results",
@@ -185,7 +283,6 @@ export const translations = {
       copyright: "© 2026 New England Academy Express. All rights reserved.",
     },
   },
-
   zh: {
     brand: {
       name: "新英格兰教育快线",
@@ -302,16 +399,40 @@ export const translations = {
     },
 
     services: {
-      title: "我们的服务",
-      items: [
-        "美国私立高中、本科及研究生升学规划",
-        "暑期项目申请服务",
-        "暑期校园访问项目",
-        "高中阶段过渡支持、GPA 管理及学术论文辅导",
-        "顶尖 STEM 实验室暑期科研实习项目",
-        "私立高中国际学生监管服务",
-      ],
+  title: "我们的服务",
+  items: [
+    {
+      title: "美国私立高中、本科及研究生升学规划",
+      description:
+        "我们为申请美国私立高中、本科及研究生项目的学生提供个性化升学规划服务。内容包括学术定位、选校名单制定、申请时间线设计、文书策略、面试准备以及整体申请指导，帮助学生根据自身目标制定清晰而可执行的升学路径。",
     },
+    {
+      title: "暑期项目申请服务",
+      description:
+        "我们帮助学生筛选并申请与其学术兴趣、能力水平和长期升学规划相匹配的暑期项目。服务内容包括项目选择建议、申请材料审核、文书修改，以及如何将暑期经历有效转化为未来申请竞争力。",
+    },
+    {
+      title: "暑期校园访问项目",
+      description:
+        "我们协助家庭制定有针对性的校园访问计划，帮助学生更深入了解学校文化、学术资源与校园生活。服务包括访问路线安排、问题准备以及访问后的总结与分析，从而帮助学生在未来选校时做出更清晰的判断。",
+    },
+    {
+      title: "高中阶段过渡支持、GPA 管理及学术论文辅导",
+      description:
+        "我们帮助学生适应新的学术环境与课程要求，包括课程规划、GPA 管理、学习习惯培养，以及学术论文与研究写作辅导，帮助学生建立长期稳定的学术表现和更扎实的学术能力。",
+    },
+    {
+      title: "顶尖 STEM 实验室暑期科研实习项目",
+      description:
+        "我们为学生对接高质量的 STEM 暑期科研与实验室相关机会，帮助学生深入发展学科兴趣、积累实践经验，并为未来在科学、工程及相关领域的申请建立更强的背景支持。",
+    },
+    {
+      title: "国际学生私立高中支持与监管服务",
+      description:
+        "我们为在美国私立高中就读的国际学生提供持续性的支持与跟进，包括家校沟通、适应辅导、学业进展跟踪以及日常事务建议，帮助学生更顺利地融入学校环境并保持稳定成长。",
+    },
+  ],
+},
 
     results: {
       title: "录取成果",
@@ -371,4 +492,7 @@ export const translations = {
   },
 } as const;
 
+
 export type Language = keyof typeof translations;
+export type Translation = TranslationContent;
+
