@@ -36,19 +36,29 @@ export default function SiteHeader() {
 
       <nav className="border-b border-green-200 bg-green-100">
         <div className="mx-auto flex max-w-6xl items-center justify-center px-6 py-4">
-          <div className="flex gap-12 text-xl font-semibold">
+          <div className="flex gap-10 text-xl font-semibold">
             <Link href="/" className="text-gray-900 hover:text-green-700">
               {t.nav.home}
             </Link>
+
+            <Link
+              href="/profile"
+              className="text-gray-900 hover:text-green-700"
+            >
+              {t.nav.profile}
+            </Link>
+
             <Link href="/about" className="text-gray-900 hover:text-green-700">
               {t.nav.about}
             </Link>
+
             <Link
               href="/services"
               className="text-gray-900 hover:text-green-700"
             >
               {t.nav.services}
             </Link>
+
             <Link
               href="/contact"
               className="text-gray-900 hover:text-green-700"

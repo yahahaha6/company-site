@@ -13,6 +13,7 @@ type TranslationContent = {
     services: string;
     results: string;
     contact: string;
+    companyprofile: string;
     languageButton: string;
   };
   home: {
@@ -20,6 +21,7 @@ type TranslationContent = {
     title: string;
     description: string;
     primaryButton: string;
+    companyprofile: string;
     secondaryButton: string;
   };
   profile: {
@@ -67,6 +69,10 @@ type TranslationContent = {
     emailLabel: string;
     email: string;
   };
+  companyprofile: {
+    title: string;
+    paragraphs: string[];
+  };
   footer: {
     copyright: string;
   };
@@ -84,6 +90,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
       services: "Our Services",
       results: "Admission Results",
       contact: "Contact Us",
+      companyprofile: "Company Profile",
       languageButton: "切换到中文",
     },
 
@@ -95,6 +102,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
         "New England Academy Express is a premier education consulting firm based in the New England region of the northeastern United States. We provide comprehensive and personalized support for families seeking admission to U.S. private high schools, colleges, and graduate programs.",
       primaryButton: "Our Services",
       secondaryButton: "About Us",
+      companyprofile: "Company Profile",
     },
 
     profile: {
@@ -269,6 +277,18 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
         "Additional acceptances include St. Andrew’s (DE), Kent, The Hill School, St. George’s, Mercersburg, Northfield Mount Hermon, Culver, Stevenson, Lake Forest Academy, Stony Brook, Georgetown Prep, Tabor, Pennington, Woodberry Forest, Ethel Walker, St. Stephen’s Episcopal (TX), Cranbrook, Cheshire Academy, McCallie, Avon Old Farms, St. Albans, Wyoming Seminary, Santa Catalina, Oregon Episcopal School, Hamden Hall Country Day School, and more.",
     },
 
+    companyprofile: {
+  title: "Company Profile",
+  paragraphs: [
+    "New England Academy Express (commonly referred to as “New England Academy”) is a premier education consulting firm based in the New England region of the northeastern United States. We specialize in providing exceptional and comprehensive educational consulting services to families seeking admission to U.S. private high schools, colleges, and graduate programs.",
+    "With offices on both the East and West Coasts, New England Academy is staffed by a distinguished team of consultants, including Ph.D. graduates from Ivy League institutions such as Yale, Harvard, and the University of Pennsylvania, as well as former Ivy League admissions officers, interviewers, and seasoned counselors with more than a decade of experience in college admissions.",
+    "Our founders and senior consultants possess deep insights into university values and selection criteria, developed through extensive Ivy League training and firsthand experience with admissions processes. We maintain strong, collaborative relationships with leading university admissions offices, ensuring that we receive timely updates and firsthand knowledge of evolving evaluation standards.",
+    "At New England Academy, we provide personalized, strategic support for students and families who seek professional guidance throughout the application journey—especially those targeting selective universities and competitive programs. We offer three premium college counseling packages, each designed to meet diverse needs at accessible price points.",
+    "We also maintain long-standing partnerships with student organizations at prestigious institutions such as Yale, Harvard, Columbia, Brown, MIT, UPenn, Cornell, and Stanford, enabling us to build a robust peer mentor network. Our mentors provide high-level academic guidance and long-term support to students and their families.",
+    "New England Academy Express is committed to excellence. We stand as a trusted partner for students and families who expect the highest standard in education consulting, ensuring that every client receives the expertise and attention needed to achieve their academic goals.",
+  ],
+},
+
     contact: {
       title: "Contact Us",
       contactsLabel: "Contacts",
@@ -294,6 +314,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
       services: "我们的服务",
       results: "录取成果",
       contact: "联系我们",
+      companyprofile: "团队优势",
       languageButton: "Switch to English",
     },
 
@@ -304,6 +325,8 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
         "New England Academy Express（新英格兰教育快线）是一家总部位于美国东北部新英格兰地区的高端教育咨询机构，专注于为家庭提供美国顶尖私立高中、本科及研究生项目的全流程、个性化升学规划与申请指导服务。",
       primaryButton: "我们的服务",
       secondaryButton: "关于我们",
+      companyprofile: "团队优势",
+      
     },
 
     profile: {
@@ -485,6 +508,18 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
       emailLabel: "邮箱",
       email: "Hedy151221@gmail.com | Weiwang.neae@gmail.com",
     },
+
+    companyprofile: {
+  title: "团队优势",
+  paragraphs: [
+    "New England Academy Express（新英格兰教育快线，简称 “New England Academy”）是一家总部位于美国东北部新英格兰地区的高端教育咨询机构，专注于为家庭提供美国顶尖私立高中、本科及研究生项目的全流程、个性化升学规划与申请指导服务。",
+    "我们在美国东西海岸均设有办公室，团队由常春藤盟校博士毕业生、前常春藤招生官与顶尖美高面试官，以及拥有十年以上升学指导经验的资深顾问组成。核心顾问毕业于耶鲁大学、哈佛大学、哥伦比亚大学、宾夕法尼亚大学等世界一流学府，具备深厚的学术背景与一线招生实务经验。",
+    "创始人及资深顾问团队深度理解美国大学的办学理念与选拔逻辑，其洞察力源于长期的常春藤体系培养以及亲身参与招生流程的实战经验。我们与多所顶尖大学招生办公室保持长期、密切的合作关系，能够及时掌握最新的招生政策变化与评估标准。",
+    "New England Academy 始终致力于为目标明确、志在冲击高度竞争性院校与项目的学生及家庭，提供高度定制化、战略化的申请支持。我们设计了三类高端升学咨询方案，在保证专业深度的同时，兼顾不同家庭的实际需求与性价比。",
+    "同时，我们与耶鲁、哈佛、哥伦比亚、布朗、MIT、宾大、康奈尔、斯坦福等顶尖高校的学生组织保持长期合作，构建了强大的同龄人导师（Peer Mentor）网络。导师团队为学生提供高水平的学术引导、长期规划支持与真实校园视角陪伴。",
+    "New England Academy Express 以卓越为准绳，致力于成为值得信赖的终身学业与发展顾问，确保每一位学生都能获得与其目标相匹配的专业深度与关注度，稳步实现学术与人生理想。"
+  ],
+},
 
     footer: {
       copyright: "© 2026 New England Academy Express. 版权所有。",
