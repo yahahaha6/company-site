@@ -6,19 +6,7 @@ export default function AboutPage() {
   const { t } = useLanguage();
 
   return (
-    <main className="relative min-h-screen overflow-hidden text-gray-900">
-      <div
-        className="pointer-events-none fixed inset-0 z-0 bg-cover bg-no-repeat"
-        style={{
-          backgroundImage: "url('/aboutus.JPG')",
-          backgroundPosition: "center center",
-          filter: "blur(6px)",
-          transform: "scale(1.05)",
-          opacity: 0.9,
-        }}
-      />
-      <div className="pointer-events-none fixed inset-0 z-0 bg-white/20" />
-
+    <main className="relative min-h-screen text-gray-900">
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
         <h1 className="text-5xl font-bold">{t.about.title}</h1>
 

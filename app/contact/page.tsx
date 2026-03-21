@@ -6,19 +6,7 @@ export default function ContactPage() {
   const { t } = useLanguage();
 
   return (
-    <main className="relative min-h-screen overflow-hidden text-gray-900">
-      <div
-        className="pointer-events-none fixed inset-0 z-0 bg-cover bg-no-repeat"
-        style={{
-          backgroundImage: "url('/contact.JPG')",
-          backgroundPosition: "center center",
-          filter: "blur(5px)",
-          transform: "scale(1.05)",
-          opacity: 0.9,
-        }}
-      />
-      <div className="pointer-events-none fixed inset-0 z-0 bg-white/20" />
-
+    <main className="relative min-h-screen text-gray-900">
       <section className="relative z-10 mx-auto max-w-4xl px-6 py-16">
         <h1 className="text-4xl font-bold">{t.contact.title}</h1>
 
