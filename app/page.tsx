@@ -7,24 +7,8 @@ export default function HomePage() {
   const { t } = useLanguage();
 
   return (
-    <main className="relative min-h-screen overflow-hidden text-gray-900">
-      {/* 背景图层 */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/homebg.jpg')",
-          backgroundPosition: "center 78%",
-          filter: "blur(3px)",
-          transform: "scale(1.06)",
-          opacity: 0.9,
-        }}
-      />
-
-      {/* 白色轻遮罩 */}
-      <div className="absolute inset-0 z-0 bg-white/15" />
-
-      {/* 正文 */}
-      <section className="relative z-10 mx-auto max-w-6xl px-6 py-20 text-center">
+    <main className="relative min-h-screen text-gray-900">
+      <section className="relative z-10 mx-auto flex min-h-[calc(100vh-220px)] max-w-6xl flex-col items-center justify-center px-6 pt-20 pb-40 text-center">
         <div className="mx-auto mb-6 inline-block rounded-full bg-white/75 px-6 py-2 text-lg text-gray-700 backdrop-blur-sm">
           {t.home.badge}
         </div>
