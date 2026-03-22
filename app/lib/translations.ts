@@ -625,7 +625,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
 
     contact: {
   title: "联系我们",
-  subtitle: "我们的全球布局与本地导师网络",
+  subtitle: "根植新英格兰地区与多城市导师网络",
   intro1:
     "新英格兰教育（New England Academy）总部位于美国康涅狄格州，深耕美国教育体系，致力于为学生与家庭提供专业、系统的升学指导。",
   intro2:
