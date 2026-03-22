@@ -57,9 +57,6 @@ export default function SiteHeader() {
               {t.nav.journeys}
             </Link>
 
-            <Link href="/journeys" className="text-gray-900 hover:text-green-700">
-  {t.nav.journeys}
-</Link>
 
             <Link href="/contact" className="text-gray-900 hover:text-green-700">
               {t.nav.contact}
