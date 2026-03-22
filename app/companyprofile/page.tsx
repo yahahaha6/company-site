@@ -2,7 +2,7 @@
 
 import { useLanguage } from "../context/LanguageContext";
 
-export default function ProfilePage() {
+export default function CompanyProfilePage() {
   const { t } = useLanguage();
 
   return (
