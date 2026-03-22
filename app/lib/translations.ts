@@ -11,7 +11,7 @@ type TranslationContent = {
     home: string;
     about: string;
     services: string;
-    results: string;
+    journeys: string;
     contact: string;
     companyprofile: string;
     languageButton: string;
@@ -60,6 +60,17 @@ type TranslationContent = {
     highSchoolList: string[];
     highSchoolMore: string;
   };
+  journeys: {
+    title: string;
+    undergradTitle: string;
+    undergradLead: string;
+    undergradList: string[];
+    undergradMore: string;
+    highSchoolTitle: string;
+    highSchoolLead: string;
+    highSchoolList: string[];
+    highSchoolMore: string;
+  };
   contact: {
   title: string;
   subtitle: string;
@@ -95,7 +106,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
       home: "Home",
       about: "About Us",
       services: "Our Services",
-      results: "Admission Results",
+      journeys: "Journeys&Milestones",
       contact: "Contact Us",
       companyprofile: "Company Profile",
       languageButton: "切换到中文",
@@ -239,6 +250,51 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
     },
   ],
 },
+    journeys: {
+  title: "Journeys & Milestones",
+  undergradTitle: "Undergraduate Admissions",
+  undergradLead:
+    "Our students have been admitted to prestigious universities, including:",
+  undergradList: [
+    "Massachusetts Institute of Technology (MIT)",
+    "Harvard University",
+    "Columbia University",
+    "Yale University",
+    "Stanford University",
+    "Brown University",
+    "Cornell University",
+    "University of Pennsylvania",
+    "University of Chicago",
+    "Duke University",
+    "Northwestern University",
+    "Dartmouth College",
+    "Rice University",
+    "University of California, Berkeley",
+    "Johns Hopkins University",
+    "University of Cambridge",
+    "University of Oxford",
+    "Imperial College London",
+  ],
+  undergradMore:
+    "Additional acceptances include: NYU, UCLA, Amherst, Claremont McKenna, Smith, Vanderbilt, University of Michigan–Ann Arbor, Emory, University of Virginia, Washington University in St. Louis, USC, UIUC, Boston College, Boston University, Purdue University, and more.",
+
+  highSchoolTitle: "High School Admissions",
+  highSchoolLead:
+    "Our students have been admitted to top U.S. boarding and private high schools, including:",
+  highSchoolList: [
+    "Choate Rosemary Hall",
+    "St. Paul’s School",
+    "The Hotchkiss School",
+    "Deerfield Academy",
+    "The Webb Schools",
+    "St. Mark’s School",
+    "Princeton International School of Math and Science",
+  ],
+  highSchoolMore:
+    "Additional acceptances include: St. Andrew’s (DE), Kent, The Hill School, St. George’s, Mercersburg, Northfield Mount Hermon, Culver, Stevenson, Lake Forest Academy, Stony Brook, Georgetown Prep, Tabor, Pennington, Woodberry Forest, Ethel Walker, St. Stephen’s Episcopal (TX), Cranbrook, Cheshire Academy, McCallie, Avon Old Farms, St. Albans, Wyoming Seminary, Santa Catalina, Oregon Episcopal School, Hamden Hall Country Day School, and more.",
+},
+
+
 
     results: {
       title: "Admission Results",
@@ -337,7 +393,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
       home: "首页",
       about: "关于我们",
       services: "我们的服务",
-      results: "录取成果",
+      journeys: "升学成果",
       contact: "联系我们",
       companyprofile: "团队优势",
       languageButton: "Switch to English",
@@ -523,6 +579,49 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
       highSchoolMore:
         "其他录取院校包括：St. Andrew’s（DE）、Kent、The Hill School、St. George’s、Mercersburg、Northfield Mount Hermon、Culver、Stevenson、Lake Forest Academy、Stony Brook、Georgetown Prep、Tabor、Pennington、Woodberry Forest、Ethel Walker、St. Stephen’s Episcopal（TX）、Cranbrook、Cheshire Academy、McCallie、Avon Old Farms、St. Albans、Wyoming Seminary、Santa Catalina、Oregon Episcopal School、Hamden Hall Country Day School 等。",
     },
+
+
+    journeys: {
+  title: "升学成果",
+  undergradTitle: "本科录取方向",
+  undergradLead: "学生成功录取院校包括：",
+  undergradList: [
+    "麻省理工学院（MIT）",
+    "哈佛大学",
+    "哥伦比亚大学",
+    "耶鲁大学",
+    "斯坦福大学",
+    "布朗大学",
+    "康奈尔大学",
+    "宾夕法尼亚大学",
+    "芝加哥大学",
+    "杜克大学",
+    "西北大学",
+    "达特茅斯学院",
+    "莱斯大学",
+    "加州大学伯克利分校",
+    "约翰霍普金斯大学",
+    "剑桥大学",
+    "牛津大学",
+    "帝国理工学院",
+  ],
+  undergradMore:
+    "其他录取院校还包括：NYU、UCLA、阿默斯特学院、克莱蒙特·麦肯纳学院、史密斯学院、范德堡大学、密歇根大学安娜堡分校、埃默里大学、弗吉尼亚大学、圣路易斯华盛顿大学、南加州大学（USC）、UIUC、波士顿学院、波士顿大学、普渡大学等。",
+
+  highSchoolTitle: "顶尖私立美高录取结果",
+  highSchoolLead: "学生成功进入的美国顶尖寄宿及私立高中包括：",
+  highSchoolList: [
+    "Choate Rosemary Hall",
+    "St. Paul’s School",
+    "The Hotchkiss School",
+    "Deerfield Academy",
+    "The Webb Schools",
+    "St. Mark’s School",
+    "Princeton International School of Math and Science",
+  ],
+  highSchoolMore:
+    "其他录取院校包括：St. Andrew’s（DE）、Kent、The Hill School、St. George’s、Mercersburg、Northfield Mount Hermon、Culver、Stevenson、Lake Forest Academy、Stony Brook、Georgetown Prep、Tabor、Pennington、Woodberry Forest、Ethel Walker、St. Stephen’s Episcopal（TX）、Cranbrook、Cheshire Academy、McCallie、Avon Old Farms、St. Albans、Wyoming Seminary、Santa Catalina、Oregon Episcopal School、Hamden Hall Country Day School 等。",
+},
 
     contact: {
   title: "联系我们",
