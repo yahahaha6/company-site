@@ -34,37 +34,34 @@ export default function SiteHeader() {
         </div>
       </div>
 
-      <nav className="sticky top-0 z-50 border-b border-green-200 bg-green-100">
-        <div className="mx-auto flex max-w-6xl items-center justify-center px-6 py-4">
-          <div className="flex gap-12 text-xl font-semibold">
+      <nav className="sticky top-0 z-50 border-b border-green-200 bg-green-100/95 backdrop-blur-sm">
+        <div className="mx-auto flex max-w-7xl items-center justify-center px-6 py-4">
+          <div className="flex gap-10 text-xl font-semibold">
             <Link href="/" className="text-gray-900 hover:text-green-700">
               {t.nav.home}
             </Link>
 
-             
+            <Link href="/profile" className="text-gray-900 hover:text-green-700">
+              {t.nav.companyprofile}
+            </Link>
 
             <Link href="/about" className="text-gray-900 hover:text-green-700">
               {t.nav.about}
             </Link>
 
-            <Link
-              href="/companyprofile"
-              className="text-gray-900 hover:text-green-700"
-            >
-              {t.nav.companyprofile}
-            </Link>
-
-            <Link
-              href="/services"
-              className="text-gray-900 hover:text-green-700"
-            >
+            <Link href="/services" className="text-gray-900 hover:text-green-700">
               {t.nav.services}
             </Link>
 
-            <Link
-              href="/contact"
-              className="text-gray-900 hover:text-green-700"
-            >
+            <Link href="/journeys" className="text-gray-900 hover:text-green-700">
+              {t.nav.journeys}
+            </Link>
+
+            <Link href="/journeys" className="text-gray-900 hover:text-green-700">
+  {t.nav.journeys}
+</Link>
+
+            <Link href="/contact" className="text-gray-900 hover:text-green-700">
               {t.nav.contact}
             </Link>
           </div>
