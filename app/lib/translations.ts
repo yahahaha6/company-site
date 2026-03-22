@@ -61,14 +61,21 @@ type TranslationContent = {
     highSchoolMore: string;
   };
   contact: {
-    title: string;
-    contactsLabel: string;
-    contacts: string;
-    phoneLabel: string;
-    phone: string;
-    emailLabel: string;
-    email: string;
-  };
+  title: string;
+  subtitle: string;
+  intro1: string;
+  intro2: string;
+  usTitle: string;
+  usLocations: string[];
+  chinaTitle: string;
+  chinaLocations: string[];
+  contactTitle: string;
+  emailLabel: string;
+  email: string;
+  phoneLabel: string;
+  phone: string;
+  closing: string;
+};
   companyprofile: {
     title: string;
     paragraphs: string[];
@@ -290,14 +297,32 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
 },
 
     contact: {
-      title: "Contact Us",
-      contactsLabel: "Contacts",
-      contacts: "Hedy Zhang / Wei Wang",
-      phoneLabel: "Phone",
-      phone: "203-376-3559 | 203-809-5580",
-      emailLabel: "Email",
-      email: "Hedy151221@gmail.com | Weiwang.neae@gmail.com",
-    },
+  title: "Contact Us",
+  subtitle: "Our Global Presence & Local Mentorship Network",
+  intro1:
+    "Rooted in Connecticut, United States, New England Academy has built a strong, cross-regional mentorship network to support students and families both in the U.S. and internationally.",
+  intro2:
+    "With our headquarters in Connecticut, we are supported by dedicated advisors and mentors across major cities, ensuring localized guidance with global insight.",
+  usTitle: "U.S. Locations",
+  usLocations: [
+    "Connecticut (Headquarters) – Hedy/Wei",
+    "New York – Christina",
+    "Los Angeles – Michele",
+    "Seattle – Flora",
+  ],
+  chinaTitle: "China Locations",
+  chinaLocations: [
+    "Shanghai – Jianing",
+    "Shenzhen – Qing Huang / Ruonan",
+  ],
+  contactTitle: "Contact Us",
+  emailLabel: "Email",
+  email: "Hedy151221@gmail.com | Weiwang.neae@gmail.com",
+  phoneLabel: "Phone",
+  phone: "203-376-3559 | 203-809-5580",
+  closing:
+    "Through this distributed network, we are able to provide timely, personalized support while maintaining the highest standard of U.S.-based educational expertise.",
+},
 
     footer: {
       copyright: "© 2026 New England Academy Express. All rights reserved.",
@@ -500,14 +525,32 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
     },
 
     contact: {
-      title: "联系我们",
-      contactsLabel: "联系人",
-      contacts: "Hedy Zhang / Wei Wang",
-      phoneLabel: "电话",
-      phone: "203-376-3559 | 203-809-5580",
-      emailLabel: "邮箱",
-      email: "Hedy151221@gmail.com | Weiwang.neae@gmail.com",
-    },
+  title: "联系我们",
+  subtitle: "我们的全球布局与本地导师网络",
+  intro1:
+    "新英格兰教育（New England Academy）总部位于美国康涅狄格州，深耕美国教育体系，致力于为学生与家庭提供专业、系统的升学指导。",
+  intro2:
+    "在此基础上，我们已在中美多个核心城市建立了完善的导师与顾问网络，实现全球视野与本地支持的有机结合，为不同地区的家庭提供及时、个性化的服务。",
+  usTitle: "美国地区",
+  usLocations: [
+    "康涅狄格州（总部）— Hedy / Wei",
+    "纽约 — Christina",
+    "洛杉矶 — Michele",
+    "西雅图 — Flora",
+  ],
+  chinaTitle: "中国地区",
+  chinaLocations: [
+    "上海 — Jianing",
+    "深圳 — Qing Huang / Ruonan",
+  ],
+  contactTitle: "联系方式",
+  emailLabel: "邮件",
+  email: "Hedy151221@gmail.com | Weiwang.neae@gmail.com",
+  phoneLabel: "电话",
+  phone: "203-376-3559 | 203-809-5580",
+  closing:
+    "依托这一跨区域网络，我们能够在保持美国本土教育专业性的同时，为全球家庭提供高效、持续且贴近需求的支持服务。",
+},
 
     companyprofile: {
   title: "团队优势",
