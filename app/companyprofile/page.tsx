@@ -11,7 +11,7 @@ export default function CompanyProfilePage() {
         <h1 className="text-5xl font-bold">{t.companyprofile.title}</h1>
 
         <div className="mt-10 grid gap-8">
-          {t.profile.paragraphs.map((paragraph, index) => (
+          {t.companyprofile.paragraphs.map((paragraph, index) => (
             <div
               key={index}
               className="rounded-3xl border border-white/40 bg-white/75 p-8 backdrop-blur-sm"

@@ -18,7 +18,7 @@ export default function RouteBackground() {
     backgroundImage = "/contact.JPG";
     backgroundPosition = "center 70%";
   } else if (pathname == "/companyprofile") {
-    backgroundImage = "companyprofile.JPG";
+    backgroundImage = "/companyprofile.JPG";
     backgroundPosition = "center 70%";
   } else if (pathname == "/journeys") {
     backgroundImage = "/journeys.JPG";

@@ -41,7 +41,7 @@ export default function SiteHeader() {
               {t.nav.home}
             </Link>
 
-            <Link href="/profile" className="text-gray-900 hover:text-green-700">
+            <Link href="/companyprofile" className="text-gray-900 hover:text-green-700">
               {t.nav.companyprofile}
             </Link>
 
