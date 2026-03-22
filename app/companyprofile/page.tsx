@@ -8,7 +8,7 @@ export default function ProfilePage() {
   return (
     <main className="relative min-h-screen text-gray-900">
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
-        <h1 className="text-5xl font-bold">{t.profile.title}</h1>
+        <h1 className="text-5xl font-bold">{t.companyprofile.title}</h1>
 
         <div className="mt-10 grid gap-8">
           {t.profile.paragraphs.map((paragraph, index) => (
