@@ -13,11 +13,11 @@ export default function HomePage() {
           {t.home.badge}
         </div>
 
-        <h1 className="mx-auto max-w-5xl text-6xl font-bold leading-tight">
+        <h1 className="mx-auto max-w-5xl text-3xl font-bold leading-tight">
           {t.home.title}
         </h1>
 
-        <p className="mx-auto mt-8 max-w-4xl text-2xl leading-relaxed text-gray-700">
+        <p className="mx-auto mt-8 max-w-4xl text-4xl leading-relaxed text-gray-700">
           {t.home.description}
         </p>
 
