@@ -442,7 +442,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
         {
           name: "Michele",
           role: "合伙人",
-          bio: "Michele 出身教育世家，毕业于宾夕法尼亚大学教育院，拥有超过十年的美国高中与大学招生指导经验，以扎实的学术判断力和深度理解文理教育体系而著称。",
+          bio: "Michele 出身教育世家，毕业于宾夕法尼亚大学教育学院，拥有超过十年的美国高中与大学招生指导经验，以扎实的学术判断力和深度理解文理教育体系而著称。",
         },
         {
           name: "Theo",
