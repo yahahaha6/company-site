@@ -6,15 +6,16 @@ export default function CompanyProfilePage() {
   const { t } = useLanguage();
 
   return (
-    <main className="relative min-h-screen text-gray-900">
-      <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
-        <h1 className="text-5xl font-bold">{t.companyprofile.title}</h1>
+    <main className="page-shell">
+      <section className="page-section">
+        <h1 className="page-title reveal-up">{t.companyprofile.title}</h1>
 
         <div className="mt-10 grid gap-8">
           {t.companyprofile.paragraphs.map((paragraph, index) => (
             <div
               key={index}
-              className="rounded-3xl border border-white/40 bg-white/75 p-8 backdrop-blur-sm"
+              className="surface-card reveal-up rounded-2xl p-8"
+              style={{ animationDelay: `${index * 70}ms` }}
             >
               <p className="text-xl leading-relaxed text-gray-700">
                 {paragraph}

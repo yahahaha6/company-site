@@ -12,6 +12,7 @@ type TranslationContent = {
     about: string;
     services: string;
     journeys: string;
+    map: string;
     contact: string;
     companyprofile: string;
     languageButton: string;
@@ -107,6 +108,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
       about: "About Us",
       services: "Our Services",
       journeys: "Journeys&Milestones",
+      map: "School Map",
       contact: "Contact Us",
       companyprofile: "Company Profile",
       languageButton: "切换到中文",
@@ -394,6 +396,7 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
       about: "关于我们",
       services: "我们的服务",
       journeys: "升学成果",
+      map: "学校地图",
       contact: "联系我们",
       companyprofile: "团队优势",
       languageButton: "Switch to English",
@@ -672,4 +675,3 @@ export const translations: Record<"en" | "zh", TranslationContent> = {
 
 export type Language = keyof typeof translations;
 export type Translation = TranslationContent;
-

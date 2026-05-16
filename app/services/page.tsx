@@ -12,9 +12,9 @@ export default function ServicesPage() {
   };
 
   return (
-    <main className="relative min-h-screen text-gray-900">
-      <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
-        <h1 className="text-5xl font-bold">{t.services.title}</h1>
+    <main className="page-shell">
+      <section className="page-section">
+        <h1 className="page-title reveal-up">{t.services.title}</h1>
 
         <div className="mt-10 space-y-6">
           {t.services.items.map((item, index) => {
@@ -23,29 +23,36 @@ export default function ServicesPage() {
             return (
               <div
                 key={index}
-                className="overflow-hidden rounded-3xl border border-white/40 bg-white/75 backdrop-blur-sm"
+                className="surface-card reveal-up overflow-hidden rounded-2xl"
+                style={{ animationDelay: `${index * 70}ms` }}
               >
                 <button
                   type="button"
                   onClick={() => handleToggle(index)}
-                  className="flex w-full items-center justify-between px-8 py-6 text-left transition hover:bg-white/20"
+                  className="flex w-full items-center justify-between px-8 py-6 text-left transition hover:bg-white/35"
                 >
                   <span className="text-2xl font-medium text-gray-800">
                     {item.title}
                   </span>
 
-                  <span className="ml-6 shrink-0 text-3xl font-light text-gray-600">
+                  <span
+                    className={`ml-6 shrink-0 text-3xl font-light text-gray-600 transition-transform duration-200 ${
+                      isOpen ? "rotate-45" : ""
+                    }`}
+                  >
                     {isOpen ? "−" : "+"}
                   </span>
                 </button>
 
-                {isOpen && (
-                  <div className="border-t border-gray-200 px-8 py-6">
+                <div className="accordion-panel" data-open={isOpen}>
+                  <div>
+                    <div className="border-t border-gray-200 px-8 py-6">
                     <p className="text-lg leading-relaxed text-gray-700">
                       {item.description}
                     </p>
+                    </div>
                   </div>
-                )}
+                </div>
               </div>
             );
           })}

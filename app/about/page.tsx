@@ -6,11 +6,11 @@ export default function AboutPage() {
   const { t } = useLanguage();
 
   return (
-    <main className="relative min-h-screen text-gray-900">
-      <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
-        <h1 className="text-5xl font-bold">{t.about.title}</h1>
+    <main className="page-shell">
+      <section className="page-section">
+        <h1 className="page-title reveal-up">{t.about.title}</h1>
 
-        <div className="mt-14">
+        <div className="reveal-up stagger-1 mt-14">
           <h2 className="text-3xl font-bold text-gray-900">
             {t.about.leadershipTitle}
           </h2>
@@ -19,7 +19,7 @@ export default function AboutPage() {
             {t.about.leadership.map((person, index) => (
               <div
                 key={index}
-                className="rounded-3xl border border-white/40 bg-white/75 p-8 backdrop-blur-sm"
+                className="surface-card rounded-2xl p-8"
               >
                 <h3 className="text-2xl font-bold text-gray-900">
                   {person.name}
@@ -35,7 +35,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="reveal-up stagger-2 mt-16">
           <h2 className="text-3xl font-bold text-gray-900">
             {t.about.consultantTitle}
           </h2>
@@ -44,7 +44,7 @@ export default function AboutPage() {
             {t.about.consultants.map((person, index) => (
               <div
                 key={index}
-                className="rounded-3xl border border-white/40 bg-white/75 p-8 backdrop-blur-sm"
+                className="surface-card rounded-2xl p-8"
               >
                 <h3 className="text-2xl font-bold text-gray-900">
                   {person.name}
@@ -57,7 +57,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-16 rounded-3xl border border-white/40 bg-white/75 p-8 backdrop-blur-sm">
+        <div className="surface-card reveal-up stagger-3 mt-16 rounded-2xl p-8">
           <h2 className="text-3xl font-bold text-gray-900">
             {t.about.mentorTitle}
           </h2>
