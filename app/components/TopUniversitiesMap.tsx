@@ -225,15 +225,19 @@ const getTop15RankLabel = (schools: ProjectedSchool[]) => {
     .filter((rank) => rank <= 15)
     .sort((a, b) => a - b);
   const uniqueRanks = [...new Set(ranks)];
+  const visibleRanks = uniqueRanks.slice(0, 2);
+  const hasHiddenTop15Ranks = uniqueRanks.length > visibleRanks.length;
   const hasAdditionalSchools = schools.some(
     (school) => rankNumber(school.rank) > 15,
   );
 
-  if (!uniqueRanks.length) {
+  if (!visibleRanks.length) {
     return undefined;
   }
 
-  return `${uniqueRanks.join("&")}${hasAdditionalSchools ? "+" : ""}`;
+  return `${visibleRanks.join("&")}${
+    hasHiddenTop15Ranks || hasAdditionalSchools ? "+" : ""
+  }`;
 };
 
 const getClusterBestRank = (cluster: SchoolCluster) =>
