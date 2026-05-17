@@ -35,6 +35,13 @@ export default function HomePage() {
           >
             {t.home.secondaryButton}
           </Link>
+
+          <Link
+            href="/contact"
+            className="action-button rounded-full border border-green-200 bg-white/80 px-8 py-4 text-xl font-semibold text-gray-900 backdrop-blur-md hover:border-green-300 hover:bg-green-50"
+          >
+            {t.nav.contact}
+          </Link>
         </div>
       </section>
     </main>
