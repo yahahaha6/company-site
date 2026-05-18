@@ -24,21 +24,21 @@ export default function HomePage() {
         <div className="reveal-up stagger-3 mt-10 flex flex-col justify-center gap-4 sm:flex-row sm:gap-6">
           <Link
             href="/services"
-            className="action-button rounded-full bg-black px-8 py-4 text-xl font-semibold text-white"
+            className="action-button rounded-full bg-green-900 px-8 py-4 text-xl font-semibold text-white hover:bg-green-950"
           >
             {t.home.primaryButton}
           </Link>
 
           <Link
             href="/about"
-            className="action-button rounded-full border border-gray-300 bg-white/80 px-8 py-4 text-xl font-semibold text-gray-900 backdrop-blur-md hover:border-green-200"
+            className="action-button rounded-full border border-white/70 bg-white/85 px-8 py-4 text-xl font-semibold text-gray-900 shadow-sm backdrop-blur-md hover:border-green-200 hover:bg-green-50/90"
           >
             {t.home.secondaryButton}
           </Link>
 
           <Link
             href="/contact"
-            className="action-button rounded-full border border-green-200 bg-white/80 px-8 py-4 text-xl font-semibold text-gray-900 backdrop-blur-md hover:border-green-300 hover:bg-green-50"
+            className="action-button rounded-full border border-white/70 bg-white/85 px-8 py-4 text-xl font-semibold text-gray-900 shadow-sm backdrop-blur-md hover:border-green-200 hover:bg-green-50/90"
           >
             {t.nav.contact}
           </Link>
